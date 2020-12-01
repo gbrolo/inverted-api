@@ -1,20 +1,20 @@
 /**
- * Inverts texts, checks if its palindrome and returns response 
- * @param {string} text to invert  
+ * Inverts texts, checks if its palindrome and returns response
+ * @param {string} text to invert
  */
-const invertText = (  
-  text,  
+const invertText = (
+  text
 ) => {
-  const nonSpacedText = text.replace(/ /g, "");
-  const reversedText = reverseString(nonSpacedText);
+  const nonSpacedText = text.replace(/ /g, '')
+  const reversedText = reverseString(nonSpacedText)
 
   const inverted = {
     text: reversedText,
-    palindrome: checkPalindrome(nonSpacedText, reversedText),
-  };  
+    palindrome: checkPalindrome(nonSpacedText, reversedText)
+  }
 
-  return inverted;  
-};
+  return inverted
+}
 
 /**
  * Checks if text is the same as reversed text, to check if its a palindrome
@@ -22,21 +22,21 @@ const invertText = (
  */
 const checkPalindrome = (
   text,
-  reversedText,
+  reversedText
 ) => {
-  return text === reversedText;
-};
+  return text === reversedText
+}
 
 /**
  * Reverses string
  * @param {string} text to reverse
  */
 const reverseString = (
-  text,
+  text
 ) => {
-  return text.replace(/ /g, "").split("").reverse().join("");
-};
+  return text.replace(/ /g, '').split('').reverse().join('')
+}
 
 export {
-  invertText,
+  invertText
 }
