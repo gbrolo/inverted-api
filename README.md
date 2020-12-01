@@ -12,6 +12,9 @@ Routes are located at ```/server/routes``` and providers for routes are located 
 
 Test files are located inside the ```/tests``` folder at each route/provider directory.
 
+## Install
+Run ```npm install``` to install dependencies.
+
 ## Development server
 Run the development server with:
 
