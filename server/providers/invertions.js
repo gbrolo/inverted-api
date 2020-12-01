@@ -38,5 +38,7 @@ const reverseString = (
 }
 
 export {
-  invertText
+  invertText,
+  reverseString,
+  checkPalindrome
 }
